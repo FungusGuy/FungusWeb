@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" href="forms.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <section>
+        <header>
             <div class="web_name"> Web de Funguito, Creo... </div>
 
 			<div class="icons">
                 <img src="images/icon.png">
 			</div>
+        </header>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="posts.html">Posts</a></li>
-                    <li><a href="forms.html">Forms</a></li>
-                    <li><a href="xp.html">XP</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="xp.html">XP</a></li>
+            </ul>
+        </nav>
 
-        <section>
-            <div id="login">
-                Nombre<input type="text" id="txt"/>
-                Apellido<input type="text" id="txt"/>
-                Email<input type="email" id="txt"/>
-                Contraseña <input type="password" id="text"/>
-
-                <input type="radio" name="sexo"/>Masculino
-                <input type="radio" name="sexo"/>Femenino
-                <input type="radio" name="sexo"/>No Binario
-
-                Cantidad de casas<input type="number" id="num"/>
-                
-                <label>Mains</label>
-                <input type="checkbox"/>Life Line
-                <input type="checkbox"/>Wraith
-                <input type="checkbox"/>Octane
-                <input type="checkbox"/>Revenant
+        <div class="flex_container">
+            <div class="login_container">
+                <form>
+                    <div class="field_inputs">
+                        <p>Nombre</p>
+                        <input type="text"/>
+                        <p>Apellido</p>
+                        <input type="text"/>
+                        <p>Email</p>
+                        <input type="email"/>
+                        <p>Contraseña</p>
+                        <input type="password"/>
+                        <p>Fecha De Nacimiento</p>
+                        <input type="date">
+                    </div>
+                    
+                    <div class="radio_inputs">
+                        <label>
+                            <input type="radio" name="sexo"/>
+                            <span>Masculino</span>
+                        </label>
+                        <label >
+                            <input type="radio" name="sexo"/>
+                            <span>Femenino</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="No Binario"/>
+                            <span>No Binario</span>    
+                        </label>
+                    </div>
+    
+                    <div class="checkbox_inputs">
+                        <p>Mains</p>
+                        <input type="checkbox"/>Life Line
+                        <input type="checkbox"/>Wraith
+                        <input type="checkbox"/>Octane
+                        <input type="checkbox"/>Revenant
+                    </div>
+    
+                    <input type="submit">
+                </form>
             </div>
-        </section>
+        </div>
     </body>
 </html>
