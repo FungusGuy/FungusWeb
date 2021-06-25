@@ -95,15 +95,40 @@ li a:hover {
 }
 
 
-/*INTRODUCCIÓN*/
+/*
+	phone
+	@media screen and (max-width: 480px){
+		#aa00{
+			margin: 10px 10px 10px 10px;
+		}
+	}
+
+	tablet
+	@media screen and (min-width: 481px){
+		#aa00{
+			margin: 10px 15% 10px 15%;
+		}
+	}
+
+	laptop
+	@media screen and (min-width: 769px){
+		#aa00{
+			margin: 10px 20% 10px 20%;
+		}
+	}
+*/
+
+
+/*INTRODUCCIÓN BASE*/
 #aa00{
 	border-radius:10px;
+	width: 480px;
+	max-width: 90vw;
 	padding: 10px ;
-	margin: 10px 30px 10px 30px;
+	margin: auto;
 	
 	background: #ffb4b4;
 }
-
 
 #aa00 title{
 	border-radius: 5px;

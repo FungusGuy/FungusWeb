@@ -45,7 +45,6 @@ ul {
 	overflow: hidden;
 
 	background-color: #FDFFB6;
-  
 }
 
 li{
@@ -100,8 +99,9 @@ form{
 
 .field_inputs p{
 	padding: 0;
-	margin: 2px;
+	margin: 5px;
 }
+
 .radio_inputs{
 	margin-top: 10px;
 	display: flex;
