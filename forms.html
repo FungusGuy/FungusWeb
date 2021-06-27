@@ -2,6 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="forms.css">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts/drop_checkbox.js"></script>
+        <script type="text/javascript" src="scripts/drop_navbar.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -15,12 +18,15 @@
         </header>
 
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li><a href="xp.html">XP</a></li>
-            </ul>
+            <div class="navegation" id="top-nav">
+                <a href="index.html" id="active">Home</a>
+                <a href="posts.html">Posts</a>
+                <a href="forms.html">Forms</a>
+                <a href="xp.html">XP</a>
+                <a  class="menu" id="active" onclick="dropNav()">
+                    <img src="images/hamburger_button_menu_icon_155296.png" >
+                </a>
+            </div>
         </nav>
 
         <div class="flex_container">
@@ -54,12 +60,33 @@
                         </label>
                     </div>
     
-                    <div class="checkbox_inputs">
-                        <p>Mains</p>
-                        <input type="checkbox"/>Life Line
-                        <input type="checkbox"/>Wraith
-                        <input type="checkbox"/>Octane
-                        <input type="checkbox"/>Revenant
+                    <div class="dropdown-checks">
+                        <div class="select-box" onclick="showCheckboxes()">
+                            <select>
+                                <option>Select your main</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+            
+                        <div id="mains">
+                            <label>	<input type="checkbox">Bangalore </label>
+                            <label>	<input type="checkbox">Bloodhound </label>
+                            <label>	<input type="checkbox">Caustic </label>
+                            <label>	<input type="checkbox">Crypto </label>
+                            <label>	<input type="checkbox">Fuse </label>
+                            <label>	<input type="checkbox">Gibraltar </label>
+                            <label>	<input type="checkbox">Horizon </label>
+                            <label>	<input type="checkbox">Lifeline </label>
+                            <label>	<input type="checkbox">Loba </label>
+                            <label>	<input type="checkbox">Mirage </label>
+                            <label>	<input type="checkbox">Octane </label>
+                            <label>	<input type="checkbox">Pathfinder </label>
+                            <label>	<input type="checkbox">Rampart </label>
+                            <label>	<input type="checkbox">Revenant </label>
+                            <label>	<input type="checkbox">Valk </label>
+                            <label>	<input type="checkbox">Wattson </label>
+                            <label>	<input type="checkbox">Wraith </label>
+                        </div>
                     </div>
     
                     <input type="submit">

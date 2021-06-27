@@ -3,12 +3,12 @@
 
 	<head>
 		<link rel="stylesheet" href="styles.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+		<script type="text/javascript" src="scripts/drop_navbar.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-	<body>
-
-		<header>
+    <body>
+        <header>
             <div class="web_name"> Web de Funguito, Creo... </div>
 
 			<div class="icons">
@@ -17,13 +17,17 @@
         </header>
 
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li><a href="xp.html">XP</a></li>
-            </ul>
+            <div class="navegation" id="top-nav">
+                <a href="index.html" id="active">Home</a>
+                <a href="posts.html">Posts</a>
+                <a href="forms.html">Forms</a>
+                <a href="xp.html">XP</a>
+                <a  class="menu" id="active" onclick="dropNav()">
+                    <img src="images/hamburger_button_menu_icon_155296.png" >
+                </a>
+            </div>
         </nav>
+
 
 		<section>
 			<div class="articulo">

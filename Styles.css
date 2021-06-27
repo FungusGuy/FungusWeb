@@ -62,8 +62,8 @@ html{
 
 
 /*NAVEGACION*/
-ul {
-	border-radius: 10px;
+.navegation {
+	border-radius: 7px;
 	padding-left: 15px;
 	margin: 10px;
 
@@ -74,26 +74,60 @@ ul {
   
 }
 
-li{
+.navegation a {
 	float: left;
-}
-
-li a {
 	color: black;
 	text-align: center;
 	text-decoration: none;
-	
+	font-size: 13pt;
+
 	display: block;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 5px 16px;
-	margin: 5px 5% 5px 5%;
+	margin: 5px ;
 }
 
-li a:hover {
-  	background-color: #D2CFFF;
+.navegation a:hover {
+	background-color: #D2CFFF;
 	box-shadow: 0px 2px 5px #fad9ad;
 }
 
+.navegation a.menu{
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.navegation a:not(#active){display: none;}
+	.navegation a.menu{
+		display: block;
+		width: 20px;
+		margin: 2px;
+		padding: 8px;
+		float: right;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navegation.responsive {position: relative;}
+	
+	.navegation.responsive #active,
+	.navegation.responsive a:not(#active){
+		display:block;
+		text-align: left;
+		float: none;
+	}
+	
+	.navegation.responsive #active:not(.menu){
+		margin-right: 42px;
+	}
+
+	.navegation.responsive a.menu{
+		position:absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+}
 
 /*
 	phone
@@ -122,8 +156,8 @@ li a:hover {
 /*INTRODUCCIÓN BASE*/
 #aa00{
 	border-radius:10px;
-	width: 480px;
-	max-width: 90vw;
+	width: 720px;
+	max-width: 80vw;
 	padding: 10px ;
 	margin: auto;
 	
@@ -131,15 +165,17 @@ li a:hover {
 }
 
 #aa00 title{
+	font-size: 13pt;
+
 	border-radius: 5px;
 	padding: 10px;
 	box-shadow: 2px 3px 10px rgba(209, 75, 75, 0.411);
 	
 	background-color: #FDFFB6;
 }
-
+ 
 #aa00 p{
-	font-size: 11pt;
+	font-size: 12pt;
 	
 	border-radius: 5px;
 	padding: 10px;

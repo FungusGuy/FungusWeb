@@ -2,9 +2,11 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="forms.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/vue.js"></script>
+		<script type="text/javascript" src="scripts/drop_checkbox.js"></script>
 	</head>
 
 	<body>
@@ -17,7 +19,7 @@
         </header>
 
         <nav>
-            <ul>
+            <ul class="navegation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="posts.html">Posts</a></li>
                 <li><a href="forms.html">Forms</a></li>
@@ -36,5 +38,23 @@
 			<input id="myName" name="name" value="John">
 			<input type="submit" value="Send Me!">
 		</form>
+		
+		
+		<div class="dropdown-checks">
+			<div class="select-box" onclick="showCheckboxes()">
+				<select>
+					<option>Select your main</option>
+				</select>
+				<div class="overSelect"></div>
+			</div>
+
+			<div id="mains">
+				<label>	<input type="checkbox">Life Line </label>
+				<label>	<input type="checkbox">Wraith </label>
+				<label>	<input type="checkbox">Octane </label>
+				<label>	<input type="checkbox">Revenant </label>
+			</div>
+		</div>
+	
 	</body>
 </html>
