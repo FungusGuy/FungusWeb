@@ -1,57 +1,84 @@
 /*FORMULARIO*/
-.flex_container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .login_container{
-	display: flex;
-	max-width: 10000px;
-	border-radius: 25px;
-	padding: 5px;
+	border-radius:25px;
+	width: 480px;
+	max-width: 80vw;
+	padding: 10px ;
+	margin: auto;
 	
-	background-color: rgb(219, 137, 137);
+	background: #ffb4b4;
 }
 
 form{
-	display: flex;
-    flex-direction: column;
-    align-items: stretch;
-	margin: 15px;
-}
-
-.field_inputs{
-	display: flex;
-	flex-direction: column;
-	border-radius: 15px;
-	background-color: cadetblue;
-}
-
-.field_inputs p{
-	padding: 0;
 	margin: 5px;
 }
 
-.radio_inputs{
-	margin-top: 10px;
-	display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-	background-color: burlywood;
+.field_inputs{
+	border-radius: 15px;
+
+	padding: 10px 20px 15px 20px;
+
+	background-color: #ff9292;
+	box-shadow: inset 5px 5px 8px #f07f7f;
 }
+
+.field_inputs p{
+	margin: 10px 0 3px 0;
+}
+
+.field_inputs input{
+	width: 99vw;
+	height: 25px;
+	
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #c54d4d;
+	
+	margin-bottom: 10px;
+	
+}
+
+/*RADIO*/
+.radio_inputs{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	margin: 10px 0 10px 0;
+}
+
+.radio_inputs label{
+	display: flex;
+	margin: 5px 10px 5px 0;
+}
+
+.radio_inputs span{
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 480px){
+	.radio_inputs{
+		flex-direction: column;
+		left :-webkit-calc(50% - 50px);
+	}
+}
+
 
 /*CHECK BOX LIST DROPDOWN*/
 .dropdown-checks{
-	width: 200px;
+	width: 300px;
+	max-width: 70vw;
+
+	margin: 0 auto;
+	margin-top: 10px; 
+	margin-bottom:  10px ;
 }
 
-.select-box{
-	position: relative;
-}
 
 .select-box select{
 	width: 100%;
+	background: none;
 }
 
 .overSelect{
@@ -61,13 +88,26 @@ form{
 
 #mains{
 	display: none;
-	border: 1px #dadada solid;
+	flex-direction: column;
+
+	padding: 5px;
+	margin: 5px 10px 10px 10px;
+	border-radius: 5px;
+
+	box-shadow: 5px 5px 10px #ff9292;
+
+	background-color: #ffdcdc;
 }
 
 #mains label{
-	display: block;
+	display: flex;
 }
 
 #mains label:hover{
 	background-color: cadetblue;
+}
+
+input[type=submit]{
+	margin: 0 auto;
+	padding: 2px 15% 2px 15%;
 }

@@ -1,0 +1,29 @@
+[33mcommit de67fce2efdb3a391d4ecdcba3c486ca201ab119[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: FungusGuy <funguszombi@gmail.com>
+Date:   Sun Jun 27 01:54:20 2021 -0300
+
+    responsive navbar implemented, deleted header and nav bit from forms.css, forms uses 2 css files, minor tweaks to horizontal responsiveness in the intro
+
+[33mcommit b98672a580d84c60fb860f5538ed622948e40faf[m
+Author: FungusGuy <funguszombi@gmail.com>
+Date:   Fri Jun 25 16:46:38 2021 -0300
+
+    changed intro with limited size and responsiveness
+
+[33mcommit 246b2c92a0e1634baf8ff996a003fab0df003f9d[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: FungusGuy <funguszombi@gmail.com>
+Date:   Tue Jun 22 17:26:32 2021 -0300
+
+    v2, format, basic css
+
+[33mcommit cd5dfa5e63fdf65febeb9a6d9041ddb10115b9ca[m
+Author: FungusGuy <funguszombi@gmail.com>
+Date:   Thu Jun 10 01:15:59 2021 -0300
+
+    first load web
+
+[33mcommit 4023a1514b66fba373eaf6b68dc9f01cf71890bd[m
+Author: FungusGuy <funguszombi@gmail.com>
+Date:   Thu Jun 10 00:58:04 2021 -0300
+
+    first commit

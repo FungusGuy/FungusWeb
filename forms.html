@@ -29,69 +29,67 @@
             </div>
         </nav>
 
-        <div class="flex_container">
-            <div class="login_container">
-                <form>
-                    <div class="field_inputs">
-                        <p>Nombre</p>
-                        <input type="text"/>
-                        <p>Apellido</p>
-                        <input type="text"/>
-                        <p>Email</p>
-                        <input type="email"/>
-                        <p>Contraseña</p>
-                        <input type="password"/>
-                        <p>Fecha De Nacimiento</p>
-                        <input type="date">
+        <div class="login_container">
+            <form>
+                <div class="field_inputs">
+                    <p>Nombre</p>
+                    <input type="text"/>
+                    <p>Apellido</p>
+                    <input type="text"/>
+                    <p>Email</p>
+                    <input type="email"/>
+                    <p>Contraseña</p>
+                    <input type="password"/>
+                    <p>Fecha De Nacimiento</p>
+                    <input type="date">
+                </div>
+                
+                <div class="radio_inputs">
+                    <label>
+                        <input type="radio" name="sexo"/>
+                        <span>Masculino</span>
+                    </label>
+                    <label >
+                        <input type="radio" name="sexo"/>
+                        <span>Femenino</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="No Binario"/>
+                        <span>No Binario</span>    
+                    </label>
+                </div>
+
+                <div class="dropdown-checks">
+                    <div class="select-box" onclick="showCheckboxes()">
+                        <select>
+                            <option>¿Cuales son tus mains?</option>
+                        </select>
+                        <div class="overSelect"></div>
                     </div>
-                    
-                    <div class="radio_inputs">
-                        <label>
-                            <input type="radio" name="sexo"/>
-                            <span>Masculino</span>
-                        </label>
-                        <label >
-                            <input type="radio" name="sexo"/>
-                            <span>Femenino</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="sexo" value="No Binario"/>
-                            <span>No Binario</span>    
-                        </label>
+        
+                    <div id="mains">
+                        <label>	<input type="checkbox">Bangalore </label>
+                        <label>	<input type="checkbox">Bloodhound </label>
+                        <label>	<input type="checkbox">Caustic </label>
+                        <label>	<input type="checkbox">Crypto </label>
+                        <label>	<input type="checkbox">Fuse </label>
+                        <label>	<input type="checkbox">Gibraltar </label>
+                        <label>	<input type="checkbox">Horizon </label>
+                        <label>	<input type="checkbox">Lifeline </label>
+                        <label>	<input type="checkbox">Loba </label>
+                        <label>	<input type="checkbox">Mirage </label>
+                        <label>	<input type="checkbox">Octane </label>
+                        <label>	<input type="checkbox">Pathfinder </label>
+                        <label>	<input type="checkbox">Rampart </label>
+                        <label>	<input type="checkbox">Revenant </label>
+                        <label>	<input type="checkbox">Valk </label>
+                        <label>	<input type="checkbox">Wattson </label>
+                        <label>	<input type="checkbox">Wraith </label>
                     </div>
-    
-                    <div class="dropdown-checks">
-                        <div class="select-box" onclick="showCheckboxes()">
-                            <select>
-                                <option>Select your main</option>
-                            </select>
-                            <div class="overSelect"></div>
-                        </div>
-            
-                        <div id="mains">
-                            <label>	<input type="checkbox">Bangalore </label>
-                            <label>	<input type="checkbox">Bloodhound </label>
-                            <label>	<input type="checkbox">Caustic </label>
-                            <label>	<input type="checkbox">Crypto </label>
-                            <label>	<input type="checkbox">Fuse </label>
-                            <label>	<input type="checkbox">Gibraltar </label>
-                            <label>	<input type="checkbox">Horizon </label>
-                            <label>	<input type="checkbox">Lifeline </label>
-                            <label>	<input type="checkbox">Loba </label>
-                            <label>	<input type="checkbox">Mirage </label>
-                            <label>	<input type="checkbox">Octane </label>
-                            <label>	<input type="checkbox">Pathfinder </label>
-                            <label>	<input type="checkbox">Rampart </label>
-                            <label>	<input type="checkbox">Revenant </label>
-                            <label>	<input type="checkbox">Valk </label>
-                            <label>	<input type="checkbox">Wattson </label>
-                            <label>	<input type="checkbox">Wraith </label>
-                        </div>
-                    </div>
-    
-                    <input type="submit">
-                </form>
-            </div>
+                </div>
+
+                <input type="submit">
+            </form>
         </div>
     </body>
 </html>
