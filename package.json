@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon scripts/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FungusGuy/FungusWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FungusGuy/FungusWeb/issues"
+  },
+  "homepage": "https://github.com/FungusGuy/FungusWeb#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

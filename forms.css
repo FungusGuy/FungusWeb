@@ -1,3 +1,13 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	display: block;
+}
+
 /*FORMULARIO*/
 .login_container{
 	border-radius:25px;
@@ -17,19 +27,22 @@ form{
 	border-radius: 15px;
 
 	padding: 10px 20px 15px 20px;
-
 	background-color: #ff9292;
 	box-shadow: inset 5px 5px 8px #f07f7f;
 }
 
 .field_inputs p{
+	font-size: 13pt;
+	
 	margin: 10px 0 3px 0;
 }
 
 .field_inputs input{
 	width: 99vw;
 	height: 25px;
+	font-size: 12pt;
 	
+	outline: 0;
 	background: none;
 	border: 0;
 	border-bottom: 1px solid #c54d4d;
@@ -53,7 +66,8 @@ form{
 	margin: 5px 10px 5px 0;
 }
 
-.radio_inputs span{
+.radio_inputs label span{
+	font-size: 12pt;
 	margin-left: 10px;
 }
 
@@ -68,8 +82,8 @@ form{
 /*CHECK BOX LIST DROPDOWN*/
 .dropdown-checks{
 	width: 300px;
-	max-width: 70vw;
-
+	max-width: 80vw;
+	
 	margin: 0 auto;
 	margin-top: 10px; 
 	margin-bottom:  10px ;
@@ -77,8 +91,18 @@ form{
 
 
 .select-box select{
+	font-size: 12pt;
 	width: 100%;
-	background: none;
+	border-radius: 5px;
+	padding: 5px;
+
+	appearance: none;
+	background-image: url("images/hamburger_button_menu_icon_155296.png");
+	background-repeat: no-repeat;
+	background-position: right 3px center;
+	background-size: 25px;
+
+	border: none;
 }
 
 .overSelect{
@@ -101,10 +125,13 @@ form{
 
 #mains label{
 	display: flex;
+	padding: 5px ;
+	margin: 2px 1px 2px 20px;
+	border-radius: 3px;
 }
 
 #mains label:hover{
-	background-color: cadetblue;
+	background-color: #ff9292;
 }
 
 input[type=submit]{

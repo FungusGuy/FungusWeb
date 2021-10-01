@@ -15,6 +15,7 @@ background-color: #FEDEE3;
 nav background-color: #FFF2CF;*/
 
 
+
 html{
 	background-color: #ABEBFF;
 }
@@ -28,13 +29,17 @@ html{
 	display: block;
 }
 
+title{
+	display: none;
+}
+
 /*TITULO*/
 .web_name{
 	background: #ff9292;
 
 	text-align: center;
 	border-radius:50px;
-	font-size: large;
+	font-size: 18pt;
 
 	padding: 10px;
 	margin: 10px 20% 10px 20%;
@@ -164,7 +169,7 @@ html{
 	background: #ffb4b4;
 }
 
-#aa00 title{
+#aa00 span{
 	font-size: 13pt;
 
 	border-radius: 5px;
@@ -199,7 +204,7 @@ html{
 	background: #ffb4b4;
 }
 
-.articulo title{
+.articulo span{
 	font-size: 13pt;
 	font-weight: bold;
 	border-radius:10px;
